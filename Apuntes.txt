@@ -1,0 +1,23 @@
+TDD:
+	mas productiva
+	menos errores introduce
+	codigo bajo control
+========================================
+>>>casos test<<<
+van en la carpeta test
+
+import pytest
+escribir funcion con onmbre empezando por "test_"
+[[[[[[[[[codigo para caso test]]]]]]]]]
+
+	assert "funcion que se va a testear"(valores introducidos) == resultado esperado
+
+assert comprueba que metiendo los valores que mete el interprete coincidan con el valor esperado
+
+en la terminal se llama a los caso test:
+
+pytest -m "<nomb>"
+
+
+
+Variables que empiecen con dos "_" utiliza valores introducidos por el interprete
