@@ -1,5 +1,5 @@
 def anagrams(word, words):
-    resultado = []
+    res = []
     for palabra in words:
         if len(palabra) == len(word):
             i = len(palabra)
@@ -7,9 +7,9 @@ def anagrams(word, words):
                 if palabra.count(caracter) == word.count(caracter):
                     i -= 1
                 if i <= 0:
-                    resultado.append(palabra)
+                    res.append(palabra)
                     break
-    return(resultado)
+    return(res)
 
 if __name__ == "__main__":
     assert(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) == ['aabb', 'bbaa'])
